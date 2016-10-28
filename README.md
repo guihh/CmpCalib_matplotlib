@@ -2,7 +2,7 @@
 
 Tool to display output of the CmpCalib command from MicMac (IGN)
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt tag](/CmpCalib_plot_example.png)
 
 #### Recommanded requirements :
 
