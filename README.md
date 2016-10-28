@@ -35,7 +35,7 @@ $ ./CmpCalib_matplotlib.py file(s)_to_plot.txt
 
 In examples folder, you'll find 5 files which are the comparison between 1 reference calibration and 4 others  : 
 ```
-$ python CmpCalib_matplotlib/scripts/CmpCalib_matplotlib.py CmpCalib_matplotlib/examples/PDV_1/PDV_1__PDV_* -m 0.8 -i cubic
+$ python ./CmpCalib_matplotlib.py examples/PDV_1__PDV_* -m 0.8 -i cubic
 ```
 *Thresholding to 0.8 pixels delta and choose cubic interpolation.*
 *Output is a PNG file located in the same folder as the input file(s).*
