@@ -2,6 +2,8 @@
 
 Tool to display output of the CmpCalib command from MicMac (IGN)
 
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+
 #### Recommanded requirements :
 
 - CPython  >2.6 	
