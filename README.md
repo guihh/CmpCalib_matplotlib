@@ -4,20 +4,14 @@ Tool to display output of the CmpCalib command from MicMac (IGN)
 
 ![Alt tag](/CmpCalib_plot_example.png)
 
-#### Recommanded requirements :
+#### Requirements :
 
-- CPython  >2.6 	
-- numpy 1.11 	
-- matplotlib 1.5.3	
-- scipy 0.18.1	
-- collections 
-- os 
-- argparse
+Tested only with Python2.7
 
-if you have any problem with cm, please try to upgrade matplotlib :
 ```
-$ sudo pip install matplotlib --upgrade 
-```	
+sudo pip install -r requirements.txt
+```
+
 
 #### How it works :
 
