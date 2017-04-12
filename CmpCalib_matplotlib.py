@@ -1,6 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+
+
+# sudo apt-get install python3-tk
+# sudo pip3 install numpy / scipy / matplotlib
+#
+
 import os
 import sys
 import argparse
@@ -12,7 +18,6 @@ import matplotlib.gridspec as gridspec
 import matplotlib.cm as cm
 from scipy.interpolate import griddata
 from collections import OrderedDict 
-
 
 class Calibration:
 	
@@ -139,7 +144,8 @@ class Comparaison:
               #### plot ecart radiaux #### 				    
 				#~ ax = plt.subplot2grid((4, 4), (0,0),colspan=4,rowspan=1)              
               ax = plt.subplot(gs[0:2, 0:7])
-              ax.plot(np.asarray(self.calibrations[calibration].e_radiaux)[:,0],np.asarray(self.calibrations[calibration].e_radiaux)[:,1],c=self.calibrations[calibration].random_color,label=os.path.basename(calibration),linewidth = self.linewidth) # plot ecart radiaux data
+              ax.plot(np.asarray(self.calibrations[calibration].e_radiaux)[:,0],np.asarray(self.calibrations[calibration].e_radiaux)[:,1],\
+                      c=self.calibrations[calibration].random_color,label=os.path.basename(calibration),linewidth = self.linewidth) # plot ecart radiaux data
               ax.tick_params( axis = 'both' , labelsize = self.fontsize-3)	
               ax.set_xlabel('Rayon (px)', horizontalalignment = 'center').set_fontsize(self.fontsize)
               ax.set_ylabel( 'Ecarts radiaux (px)' ).set_fontsize(self.fontsize)
@@ -150,7 +156,7 @@ class Comparaison:
               #~ ax.yaxis.set_ticks_position('left','right')
               ax.xaxis.set_ticks_position('bottom')
               
-			  #### plot ecart plani ####
+              #### plot ecart plani ####
               	
               if len(self.calibrations)==1:
                 ax1 = plt.subplot(gs[3:7, 1:6])
@@ -222,7 +228,7 @@ if __name__ == '__main__':
     comparaison.initialize_plot()
     print('--- plotting ---')
     comparaison.plot_e_radiaux_plani()
-    print('--- Saved to : '+comparaison.dir_output )
+    print('--- Saved to : '+ comparaison.dir_output )
     
     
     
