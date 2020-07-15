@@ -34,9 +34,9 @@ class Calibration:
      file=open(self.path,'r')		
      for row in file :
          if re.match('\s\d', row) :
-            self.e_radiaux.append(map(float,row.split()))
+            self.e_radiaux.append(list(map(float,row.split())))
          elif re.match('\d', row):
-             self.e_plani.append(map(float,row.split()))	
+             self.e_plani.append(list(map(float,row.split())))	
      return
            
  def set_path(self,path):
